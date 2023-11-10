@@ -7,5 +7,6 @@
 #include <unistd.h>
 
 void obikngs(const char *memo);
+void _leomous(void);
 
 #endif
