@@ -6,4 +6,6 @@
 #include <string.h>
 #include <unistd.h>
 
+void obikngs(const char *memo);
+
 #endif
