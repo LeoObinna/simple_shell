@@ -3,9 +3,13 @@
 /**
  * perform_format - Executes the specified shell command in a child process
  * using fork and execve.
- * @format: command to be executed
+ * @format: command to be executed.
+ * @argv: array of strings representing the command's arguements.
+ * array must be terminated with a NULL pointer.
+ * @envp: array of strings representing the environment variables.
+ * array must be terminated with a NULL pointer.
  */
-void perform_format(const char *format)
+void perform_format(const char *format, char *const argv[], char *const envp[])
 {
 	pid_t child_pid = fork();
 
@@ -16,10 +20,7 @@ void perform_format(const char *format)
 	}
 	else if (child_pid == 0)
 	{
-		char *args[] = {format, NULL};
-		char *env[] = {NULL};
-
-		execve(format, args, env);
+		execve(format, argv, envp);
 		perror("execve");
 		exit(EXIT_FAILURE);
 	}
