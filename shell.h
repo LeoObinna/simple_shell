@@ -10,6 +10,6 @@
 
 void obikngs(const char *memo);
 void _leomous(void);
-void perform_format(const char *format);
+void perform_format(const char *format, char *const argv[], char *const envp[]);
 
 #endif
