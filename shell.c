@@ -1,20 +1,23 @@
 #include "shell.h"
 
 /**
+ * main - This is the main function.
  * _leomous() - Function to display prompt.
- * interpret_format() - Function prompts the user to enter a format and reads it from stdin.
- * @format: Buffer to store user’s input.
+ * interpret_format() - Function prompts the user to enter a format
+ * and reads it from stdin.
  * perform_format() - Function executes the command.
- * @format: The shell command to be executed.
+ * Return: 0 (success)
  */
-int main(void) {
-    char format[200];
+int main(void)
+{
+	char format[200];
 
-    for (;;) {
-        _leomous();
-        interpret_format(format, sizeof(format));
-        perform_format(format);
-    }
+	for (;;)
+	{
+		_leomous();
+		interpret_format(format, sizeof(format));
+		perform_format(format);
+	}
 
-    return 0;
+	return (0);
 }
