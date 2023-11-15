@@ -2,7 +2,7 @@
 
 /**
  * interpret_format - Reads a line of input from stdin,
- * removes the trailing newline character 
+ * removes the trailing newline character
  * and prints a newline or an error message based on the result.
  * @format: The buffer to store the input
  * @size: The size of the buffer
@@ -22,5 +22,5 @@ void interpret_format(char *format, size_t size)
 			exit(EXIT_FAILURE);
 		}
 	}
-	format[strcspn(format, "\n")] = '\0';
+	format[strcspn(format, "\n")] = '\0';
 }
