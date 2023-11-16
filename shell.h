@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#define MAX_COMMAND_LENGTH 200
 
 int main(void);
 void obikngs(const char *memo);

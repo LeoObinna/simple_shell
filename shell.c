@@ -10,9 +10,9 @@
  */
 int main(void)
 {
-	char format[200];
+	char format[MAX_COMMAND_LENGTH];
 
-	for (;;)
+	while (1)
 	{
 		_leomous();
 		interpret_format(format, sizeof(format));
