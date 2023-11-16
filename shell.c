@@ -6,7 +6,7 @@
  * interpret_format() - Function prompts the user to enter a format
  * and reads it from stdin.
  * perform_format() - Function executes the command.
- * Return: 0 (success)
+ * Return: 0 Always (success).
  */
 int main(void)
 {

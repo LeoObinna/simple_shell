@@ -6,5 +6,5 @@
  */
 void _leomous(void)
 {
-	obikngs("$");
+	obikngs("$ ");
 }
