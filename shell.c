@@ -12,13 +12,14 @@
  */
 int main(void)
 {
+	char *argv[] = {"ls", "-l", NULL};
 	char format[MAX_COMMAND_LENGTH];
 
 	while (1)
 	{
 		_leomous();
 		interpret_format(format, sizeof(format));
-		_execute(format, NULL, NULL);
+		_execute(format, argv, NULL);
 	}
 
 	return (0);
